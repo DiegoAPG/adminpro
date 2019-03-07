@@ -1,0 +1,40 @@
+-app.routes.ts sirve para generar rutas de navegardor (vistas)
+-signifia cualquier ruta te manda ahí
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+-cualquier ruta no exiwtente    
+    { path: '**', component: NopagefoundComponent }
+-Exporta y recorre las rutas
+    export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: true });
+-El modulo Routes sirve para generar rutas junto una constante
+
+-Un Module siempre se coloca en import en app.module.ts
+
+
+////Para mantener una pagina fuera del estitlo comun
+Debecontar con app-outlet en su componente padre (pages.component)
+ children: [
+            { path: 'dashboard', component: DashboardComponent },
+            { path: 'progress', component: ProgressComponent },
+            { path: 'graficas1', component: Graficas1Component },
+            { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+        ]
+Demás routes
+Deben contar con app.outlet en app component
+
+///importar component.css 
+ styleUrls: ['./login.component.css']
+
+
+ ///////Modulos perzonalizados
+
+Se genera modulo donde se tendrán mas vistas, debera ser importado en app.module
+en los modulos pezonalizados se exporta las mismas vistas para convivir entre ellas
+
+
+///////////////
+
+forRoot se usa en ruta principal
+forChild para rutas dentro de rutas
+
+
+las roots childs deben ser importadas en su propio module, no necesariamente en el principal
