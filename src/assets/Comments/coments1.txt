@@ -38,3 +38,31 @@ forChild para rutas dentro de rutas
 
 
 las roots childs deben ser importadas en su propio module, no necesariamente en el principal
+
+
+
+Github
+
+un tag es una etiqueta en commit para marcarlo como un avance importante para nosootros
+
+
+manejar variables del .ts
+[attr.ariaValuenow]="progreso"
+
+para recibir datos @input
+
+
+renombrar atributo, se busca como nombre y no leyenda -> // @Input('nombre') leyenda: string = 'Leyenda';
+
+
+[] -> en atributo se asocia a variblable
+sin [] ->  lo manda como string
+
+
+
+ngModelChange ->emite cambio de un ng model
+
+
+
+Rferencia de un elemento sin importar donde estoy 
+  @ViewChild('txtprogres') txtprogres: ElementRef; --> en html #txtprogres

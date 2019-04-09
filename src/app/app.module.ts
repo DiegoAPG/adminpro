@@ -19,7 +19,7 @@ import { PagesModule } from './pages/page.module';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
