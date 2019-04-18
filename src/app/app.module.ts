@@ -6,6 +6,12 @@ import { APP_ROUTES } from './app.routes';
 
 // import { AppRoutingModule } from './app-routing.module';
 
+// tslint:disable-next-line:comment-format
+//Services
+import { ServiceModule } from './services/service.module';
+
+
+
 // Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -26,6 +32,7 @@ import { PagesModule } from './pages/page.module';
     // AppRoutingModule,
     APP_ROUTES,
     PagesModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
